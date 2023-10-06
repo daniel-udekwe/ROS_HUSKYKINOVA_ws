@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/administrator/ws_daniel/devel/include/**",
+        "/home/administrator/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/administrator/catkin_ws/src/custom_husky/include/**",
+        "/home/administrator/ws_daniel/src/ros_kortex/third_party/gazebo-pkgs/gazebo_grasp_plugin/include/**",
+        "/home/administrator/ws_daniel/src/ros_kortex/third_party/gazebo-pkgs/gazebo_version_helpers/include/**",
+        "/home/administrator/ws_daniel/src/ros_kortex/kortex_driver/include/**",
+        "/home/administrator/ws_daniel/src/ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/include/**",
+        "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
