@@ -63,6 +63,7 @@ all: ros_kortex/kortex_gazebo/all
 all: ros_kortex/third_party/gazebo-pkgs/gazebo_version_helpers/all
 all: ros_kortex/third_party/gazebo-pkgs/gazebo_grasp_plugin/all
 all: ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/all
+all: vl53l0x_driver/all
 all: ros_kortex/kortex_driver/all
 all: ros_kortex/kortex_move_it_config/gen3_lite_gen3_lite_2f_move_it_config/all
 all: ros_kortex/kortex_move_it_config/gen3_move_it_config/all
@@ -88,6 +89,7 @@ preinstall: ros_kortex/kortex_gazebo/preinstall
 preinstall: ros_kortex/third_party/gazebo-pkgs/gazebo_version_helpers/preinstall
 preinstall: ros_kortex/third_party/gazebo-pkgs/gazebo_grasp_plugin/preinstall
 preinstall: ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/preinstall
+preinstall: vl53l0x_driver/preinstall
 preinstall: ros_kortex/kortex_driver/preinstall
 preinstall: ros_kortex/kortex_move_it_config/gen3_lite_gen3_lite_2f_move_it_config/preinstall
 preinstall: ros_kortex/kortex_move_it_config/gen3_move_it_config/preinstall
@@ -118,6 +120,7 @@ clean: ros_kortex/kortex_gazebo/clean
 clean: ros_kortex/third_party/gazebo-pkgs/gazebo_version_helpers/clean
 clean: ros_kortex/third_party/gazebo-pkgs/gazebo_grasp_plugin/clean
 clean: ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/clean
+clean: vl53l0x_driver/clean
 clean: ros_kortex/kortex_driver/clean
 clean: ros_kortex/kortex_move_it_config/gen3_lite_gen3_lite_2f_move_it_config/clean
 clean: ros_kortex/kortex_move_it_config/gen3_move_it_config/clean
@@ -1302,6 +1305,24 @@ ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/clean: ros_kortex/th
 .PHONY : ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/clean
 
 #=============================================================================
+# Directory level rules for directory vl53l0x_driver
+
+# Recursive "all" directory target.
+vl53l0x_driver/all: vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/all
+
+.PHONY : vl53l0x_driver/all
+
+# Recursive "preinstall" directory target.
+vl53l0x_driver/preinstall:
+
+.PHONY : vl53l0x_driver/preinstall
+
+# Recursive "clean" directory target.
+vl53l0x_driver/clean: vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/clean
+
+.PHONY : vl53l0x_driver/clean
+
+#=============================================================================
 # Directory level rules for directory zed-ros-wrapper/zed-ros-interfaces
 
 # Recursive "all" directory target.
@@ -1493,7 +1514,7 @@ CMakeFiles/run_tests.dir/all: ros_kortex/kortex_examples/CMakeFiles/_run_tests_k
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -1548,7 +1569,7 @@ CMakeFiles/tests.dir/all: ros_kortex/kortex_examples/CMakeFiles/kortex_examples_
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -4055,12 +4076,12 @@ ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/control_m
 ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/all:
 	$(MAKE) -f ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/build.make ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/depend
 	$(MAKE) -f ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/build.make ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/administrator/ws_daniel/build/CMakeFiles --progress-num= "Built target roboticsgroup_upatras_gazebo_mimic_joint_plugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/administrator/ws_daniel/build/CMakeFiles --progress-num=96 "Built target roboticsgroup_upatras_gazebo_mimic_joint_plugin"
 .PHONY : ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/all
 
 # Build rule for subdir invocation for target.
 ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/rule
@@ -4074,6 +4095,33 @@ roboticsgroup_upatras_gazebo_mimic_joint_plugin: ros_kortex/third_party/robotics
 ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/clean:
 	$(MAKE) -f ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/build.make ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/clean
 .PHONY : ros_kortex/third_party/roboticsgroup_upatras_gazebo_plugins/CMakeFiles/roboticsgroup_upatras_gazebo_mimic_joint_plugin.dir/clean
+
+#=============================================================================
+# Target rules for target vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir
+
+# All Build rule for target.
+vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/all:
+	$(MAKE) -f vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build.make vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/depend
+	$(MAKE) -f vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build.make vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/administrator/ws_daniel/build/CMakeFiles --progress-num= "Built target vl53l0x_publisher"
+.PHONY : vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/all
+
+# Build rule for subdir invocation for target.
+vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
+.PHONY : vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/rule
+
+# Convenience name for target.
+vl53l0x_publisher: vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/rule
+
+.PHONY : vl53l0x_publisher
+
+# clean rule for target.
+vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/clean:
+	$(MAKE) -f vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build.make vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/clean
+.PHONY : vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/clean
 
 #=============================================================================
 # Target rules for target ros_kortex/kortex_driver/CMakeFiles/run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests.dir
@@ -4114,7 +4162,7 @@ ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest.dir/all: ros_
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest.dir/rule
@@ -4287,8 +4335,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: 
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetSafetyErrorThreshold.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetRunMode.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetIPv4Settings.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ResetSafetyDefaults.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyStatus.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyEnable.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyConfiguration.dir/all
@@ -4417,8 +4465,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: 
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_PasswordChange.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SignalQuality.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Orientation.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MappingHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MapList.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SnapshotType.dir/all
@@ -4670,7 +4718,7 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: 
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetTwistHardLimitation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorInformation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorCyclic_MessageId.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AddWifiConfiguration.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SwitchControlMapping.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_py.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ArmStateInformation.dir/all
@@ -5033,8 +5081,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetSafetyErrorThreshold.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetRunMode.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetIPv4Settings.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ResetSafetyDefaults.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyStatus.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyEnable.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyConfiguration.dir/all
@@ -5163,8 +5211,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_PasswordChange.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SignalQuality.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Orientation.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MappingHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MapList.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SnapshotType.dir/all
@@ -5416,7 +5464,7 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetTwistHardLimitation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorInformation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorCyclic_MessageId.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AddWifiConfiguration.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SwitchControlMapping.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_lisp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ArmStateInformation.dir/all
@@ -5752,8 +5800,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetSafetyErrorThreshold.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetRunMode.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetIPv4Settings.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ResetSafetyDefaults.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyStatus.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyEnable.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyConfiguration.dir/all
@@ -5882,8 +5930,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_PasswordChange.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SignalQuality.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Orientation.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MappingHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MapList.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SnapshotType.dir/all
@@ -6135,7 +6183,7 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetTwistHardLimitation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorInformation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorCyclic_MessageId.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AddWifiConfiguration.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SwitchControlMapping.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_eus.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ArmStateInformation.dir/all
@@ -6498,8 +6546,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetSafetyErrorThreshold.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetRunMode.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetIPv4Settings.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ResetSafetyDefaults.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyStatus.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyEnable.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyConfiguration.dir/all
@@ -6628,8 +6676,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_PasswordChange.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SignalQuality.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Orientation.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MappingHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MapList.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SnapshotType.dir/all
@@ -6881,7 +6929,7 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all:
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetTwistHardLimitation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorInformation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorCyclic_MessageId.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AddWifiConfiguration.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SwitchControlMapping.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_cpp.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ArmStateInformation.dir/all
@@ -8965,7 +9013,7 @@ ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest_kortex_arm_dr
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests.dir/rule
@@ -13757,8 +13805,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/a
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetSafetyErrorThreshold.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetRunMode.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SetIPv4Settings.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ResetSafetyDefaults.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyStatus.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyEnable.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetSafetyConfiguration.dir/all
@@ -13887,8 +13935,8 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/a
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_PasswordChange.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SignalQuality.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Orientation.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkType.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_NetworkHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MappingHandle.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_MapList.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SnapshotType.dir/all
@@ -14140,7 +14188,7 @@ ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/a
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_GetTwistHardLimitation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorInformation.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ActuatorCyclic_MessageId.dir/all
-ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_Base_JointSpeeds.dir/all
+ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AngularWaypoint.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_AddWifiConfiguration.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_SwitchControlMapping.dir/all
 ros_kortex/kortex_driver/CMakeFiles/kortex_driver_generate_messages_nodejs.dir/all: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_ArmStateInformation.dir/all
@@ -18544,7 +18592,7 @@ ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver.dir/all: ros_kortex
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_driver/CMakeFiles/_run_tests_kortex_driver.dir/rule
@@ -27727,7 +27775,7 @@ ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples.dir/all: ros_ko
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples.dir/rule
@@ -27868,7 +27916,7 @@ ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest_kortex_ex
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest_kortex_examples_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest_kortex_examples_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest_kortex_examples_tests.dir/rule
@@ -27951,7 +27999,7 @@ ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest_kortex_exa
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest_kortex_examples_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest_kortex_examples_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest_kortex_examples_tests.dir/rule
@@ -28000,12 +28048,12 @@ ros_kortex/kortex_examples/CMakeFiles/clean_test_results_kortex_examples.dir/cle
 ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/build.make ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/depend
 	$(MAKE) -f ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/build.make ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/administrator/ws_daniel/build/CMakeFiles --progress-num=96 "Built target kortex_examples_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/administrator/ws_daniel/build/CMakeFiles --progress-num= "Built target kortex_examples_tests"
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/all
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/kortex_examples_tests.dir/rule
@@ -28032,7 +28080,7 @@ ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples.dir/all: ros_kor
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples.dir/rule
@@ -28059,7 +28107,7 @@ ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest.dir/all: r
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/run_tests_kortex_examples_gtest.dir/rule
@@ -28142,7 +28190,7 @@ ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest.dir/all: 
 
 # Build rule for subdir invocation for target.
 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/administrator/ws_daniel/build/CMakeFiles 0
 .PHONY : ros_kortex/kortex_examples/CMakeFiles/_run_tests_kortex_examples_gtest.dir/rule

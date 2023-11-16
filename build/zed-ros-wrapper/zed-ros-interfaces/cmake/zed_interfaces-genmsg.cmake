@@ -49,12 +49,12 @@ add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg" NAME_WE)
 add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg" "zed_interfaces/Skeleton2D:zed_interfaces/Skeleton3D:zed_interfaces/BoundingBox3D:zed_interfaces/Keypoint2Di:zed_interfaces/Keypoint2Df:zed_interfaces/BoundingBox2Di:zed_interfaces/BoundingBox2Df:zed_interfaces/Keypoint3D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg" "zed_interfaces/Skeleton3D:zed_interfaces/Keypoint2Df:zed_interfaces/BoundingBox2Di:zed_interfaces/Keypoint2Di:zed_interfaces/BoundingBox3D:zed_interfaces/Keypoint3D:zed_interfaces/Skeleton2D:zed_interfaces/BoundingBox2Df"
 )
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg" NAME_WE)
 add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg" "zed_interfaces/Skeleton2D:zed_interfaces/Skeleton3D:zed_interfaces/BoundingBox3D:std_msgs/Header:zed_interfaces/Keypoint3D:zed_interfaces/Keypoint2Df:zed_interfaces/BoundingBox2Di:zed_interfaces/BoundingBox2Df:zed_interfaces/Object:zed_interfaces/Keypoint2Di"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg" "std_msgs/Header:zed_interfaces/Object:zed_interfaces/Skeleton3D:zed_interfaces/Keypoint2Df:zed_interfaces/BoundingBox2Di:zed_interfaces/Keypoint2Di:zed_interfaces/BoundingBox3D:zed_interfaces/Keypoint3D:zed_interfaces/Skeleton2D:zed_interfaces/BoundingBox2Df"
 )
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg" NAME_WE)
@@ -69,12 +69,12 @@ add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg" NAME_WE)
 add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg" "sensor_msgs/Image:sensor_msgs/CameraInfo:std_msgs/Header:sensor_msgs/Imu:sensor_msgs/RegionOfInterest:geometry_msgs/Vector3:geometry_msgs/Quaternion:sensor_msgs/MagneticField"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg" "sensor_msgs/RegionOfInterest:std_msgs/Header:sensor_msgs/CameraInfo:geometry_msgs/Quaternion:sensor_msgs/Image:sensor_msgs/Imu:sensor_msgs/MagneticField:geometry_msgs/Vector3"
 )
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg" NAME_WE)
 add_custom_target(_zed_interfaces_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg" "geometry_msgs/Transform:geometry_msgs/Point:geometry_msgs/Polygon:geometry_msgs/Point32:shape_msgs/Plane:std_msgs/Header:shape_msgs/MeshTriangle:geometry_msgs/Vector3:geometry_msgs/Quaternion:shape_msgs/Mesh"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "zed_interfaces" "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg" "shape_msgs/Plane:shape_msgs/MeshTriangle:geometry_msgs/Point32:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Polygon:shape_msgs/Mesh:geometry_msgs/Point:geometry_msgs/Transform:geometry_msgs/Vector3"
 )
 
 get_filename_component(_filename "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/srv/set_pose.srv" NAME_WE)
@@ -197,13 +197,13 @@ _generate_msg_cpp(zed_interfaces
 _generate_msg_cpp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg"
+  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_cpp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_cpp(zed_interfaces
@@ -221,13 +221,13 @@ _generate_msg_cpp(zed_interfaces
 _generate_msg_cpp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_cpp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg"
+  "/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/zed_interfaces
 )
 
@@ -438,13 +438,13 @@ _generate_msg_eus(zed_interfaces
 _generate_msg_eus(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg"
+  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_eus(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_eus(zed_interfaces
@@ -462,13 +462,13 @@ _generate_msg_eus(zed_interfaces
 _generate_msg_eus(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_eus(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg"
+  "/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/zed_interfaces
 )
 
@@ -679,13 +679,13 @@ _generate_msg_lisp(zed_interfaces
 _generate_msg_lisp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg"
+  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_lisp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_lisp(zed_interfaces
@@ -703,13 +703,13 @@ _generate_msg_lisp(zed_interfaces
 _generate_msg_lisp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_lisp(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg"
+  "/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/zed_interfaces
 )
 
@@ -920,13 +920,13 @@ _generate_msg_nodejs(zed_interfaces
 _generate_msg_nodejs(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg"
+  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_nodejs(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_nodejs(zed_interfaces
@@ -944,13 +944,13 @@ _generate_msg_nodejs(zed_interfaces
 _generate_msg_nodejs(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_nodejs(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg"
+  "/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/zed_interfaces
 )
 
@@ -1161,13 +1161,13 @@ _generate_msg_py(zed_interfaces
 _generate_msg_py(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg"
+  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_py(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/ObjectsStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Object.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Df.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint2Di.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Keypoint3D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/Skeleton2D.msg;/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/BoundingBox2Df.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_py(zed_interfaces
@@ -1185,13 +1185,13 @@ _generate_msg_py(zed_interfaces
 _generate_msg_py(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/RGBDSensors.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Imu.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/MagneticField.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/zed_interfaces
 )
 _generate_msg_py(zed_interfaces
   "/home/administrator/ws_daniel/src/zed-ros-wrapper/zed-ros-interfaces/msg/PlaneStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg"
+  "/opt/ros/noetic/share/shape_msgs/cmake/../msg/Plane.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/MeshTriangle.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg;/opt/ros/noetic/share/shape_msgs/cmake/../msg/Mesh.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/zed_interfaces
 )
 

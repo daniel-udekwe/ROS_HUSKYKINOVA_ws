@@ -2,4 +2,4 @@
 source_root_dir = '/home/administrator/ws_daniel/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/administrator/ws_daniel/devel;/home/administrator/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/administrator/ws_daniel/devel;/home/administrator/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/administrator/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/administrator/catkin_ws/devel;/opt/ros/noetic' != '' else []

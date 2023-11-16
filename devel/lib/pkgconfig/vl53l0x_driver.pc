@@ -1,0 +1,8 @@
+prefix=/home/administrator/ws_daniel/devel
+
+Name: vl53l0x_driver
+Description: Description of vl53l0x_driver
+Version: 0.1.0
+Cflags: -I/home/administrator/ws_daniel/src/vl53l0x_driver/include
+Libs: -L${prefix}/lib 
+Requires: 

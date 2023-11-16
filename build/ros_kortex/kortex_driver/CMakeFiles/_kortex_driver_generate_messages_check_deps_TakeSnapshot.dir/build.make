@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/administrator/ws_daniel/build
 include ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_TakeSnapshot.dir/progress.make
 
 ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_TakeSnapshot:
-	cd /home/administrator/ws_daniel/build/ros_kortex/kortex_driver && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kortex_driver /home/administrator/ws_daniel/src/ros_kortex/kortex_driver/srv/generated/base/TakeSnapshot.srv kortex_driver/Snapshot:kortex_driver/Empty
+	cd /home/administrator/ws_daniel/build/ros_kortex/kortex_driver && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kortex_driver /home/administrator/ws_daniel/src/ros_kortex/kortex_driver/srv/generated/base/TakeSnapshot.srv kortex_driver/Empty:kortex_driver/Snapshot
 
 _kortex_driver_generate_messages_check_deps_TakeSnapshot: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_TakeSnapshot
 _kortex_driver_generate_messages_check_deps_TakeSnapshot: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_TakeSnapshot.dir/build.make

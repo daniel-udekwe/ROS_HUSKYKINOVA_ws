@@ -1364,6 +1364,19 @@ roboticsgroup_upatras_gazebo_mimic_joint_plugin/fast:
 .PHONY : roboticsgroup_upatras_gazebo_mimic_joint_plugin/fast
 
 #=============================================================================
+# Target rules for targets named vl53l0x_publisher
+
+# Build rule for target.
+vl53l0x_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vl53l0x_publisher
+.PHONY : vl53l0x_publisher
+
+# fast build rule for target.
+vl53l0x_publisher/fast:
+	$(MAKE) -f vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build.make vl53l0x_driver/CMakeFiles/vl53l0x_publisher.dir/build
+.PHONY : vl53l0x_publisher/fast
+
+#=============================================================================
 # Target rules for targets named run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests
 
 # Build rule for target.
@@ -12167,6 +12180,7 @@ help:
 	@echo "... control_msgs_generate_messages_nodejs"
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... roboticsgroup_upatras_gazebo_mimic_joint_plugin"
+	@echo "... vl53l0x_publisher"
 	@echo "... run_tests_kortex_driver_gtest_kortex_arm_driver_func_tests"
 	@echo "... _run_tests_kortex_driver_gtest"
 	@echo "... run_tests_kortex_driver"

@@ -21,12 +21,12 @@
 	<arg name="serial_no" value="203522250280"/>
     </include>
 
-
+    <!--
     <include file="$(find ros_tcp_endpoint)/launch/endpoint.launch">
     <arg name="tcp_ip" value="100.91.208.54"/>
     <arg name="tcp_port" value="9080"/>
     </include>
-  
+    -->
     
     <node pkg="kinova_ar" name="GripperPose" type="GripperController.py" output="screen"> </node>
     <node pkg="kinova_ar" name="TwistMessageConverter" type="ConvertTwistToTwistCommand.py" output="screen"> </node>

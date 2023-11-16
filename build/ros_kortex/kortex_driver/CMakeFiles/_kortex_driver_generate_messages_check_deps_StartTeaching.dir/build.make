@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/administrator/ws_daniel/build
 include ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_StartTeaching.dir/progress.make
 
 ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_StartTeaching:
-	cd /home/administrator/ws_daniel/build/ros_kortex/kortex_driver && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kortex_driver /home/administrator/ws_daniel/src/ros_kortex/kortex_driver/srv/generated/base/StartTeaching.srv kortex_driver/SequenceHandle:kortex_driver/SequenceTaskHandle:kortex_driver/Empty
+	cd /home/administrator/ws_daniel/build/ros_kortex/kortex_driver && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kortex_driver /home/administrator/ws_daniel/src/ros_kortex/kortex_driver/srv/generated/base/StartTeaching.srv kortex_driver/Empty:kortex_driver/SequenceTaskHandle:kortex_driver/SequenceHandle
 
 _kortex_driver_generate_messages_check_deps_StartTeaching: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_StartTeaching
 _kortex_driver_generate_messages_check_deps_StartTeaching: ros_kortex/kortex_driver/CMakeFiles/_kortex_driver_generate_messages_check_deps_StartTeaching.dir/build.make
